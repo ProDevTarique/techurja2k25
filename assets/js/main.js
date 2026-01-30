@@ -880,3 +880,40 @@
       AOS.init({disable: 'mobile'});
 
 })(jQuery);
+
+/* ==========================================
+   OLD CODE ENDS HERE (आपका पुराना कोड यहाँ खत्म हो रहा है)
+   ========================================== */
+
+
+/* ==========================================
+   NEW: Mobile Menu / Offcanvas Logic
+   ========================================== */
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. बटन और मेनू को सेलेक्ट करें
+    const toggleBtn = document.querySelector('.vl-offcanvas-toggle');
+    const closeBtn = document.querySelector('.vl-offcanvas-close');
+    const overlay = document.querySelector('.vl-offcanvas-overlay');
+    const wrapper = document.querySelector('.vl-offcanvas-wrapper');
+
+    // 2. ओपन फंक्शन
+    function openMenu() {
+        if(wrapper) wrapper.classList.add('active');
+    }
+
+    // 3. क्लोज फंक्शन
+    function closeMenu() {
+        if(wrapper) wrapper.classList.remove('active');
+    }
+
+    // 4. क्लिक इवेंट्स
+    if(toggleBtn) toggleBtn.addEventListener('click', openMenu);
+    if(closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if(overlay) overlay.addEventListener('click', closeMenu);
+
+    // 5. लिंक पर क्लिक करने पर मेनू बंद करें (Optional)
+    const menuLinks = document.querySelectorAll('.mobile-menu-items a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+});

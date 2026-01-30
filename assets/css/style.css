@@ -11405,4 +11405,187 @@ span.rot-minus {
 .border-custom {
   border-color: #2E0797 !important;
 }
+/* Offcanvas */
+/* Offcanvas Styles */
+.vl-offcanvas-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.vl-offcanvas-wrapper.active {
+    visibility: visible;
+    opacity: 1;
+}
+.vl-offcanvas-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.vl-offcanvas-area {
+    position: absolute;
+    top: 0;
+    right: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background: #1a1a2e; /* Dark background */
+    padding: 30px;
+    transition: 0.4s;
+    overflow-y: auto;
+    z-index: 10000;
+}
+.vl-offcanvas-wrapper.active .vl-offcanvas-area {
+    right: 0; /* Slide in */
+}
+.vl-offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.vl-offcanvas-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.mobile-menu-items ul {
+    list-style: none;
+    padding: 0;
+}
+.mobile-menu-items ul li {
+    margin-bottom: 15px;
+}
+.mobile-menu-items ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
 
+/* Event section register button */
+
+/* 1. Prevent ONLY event buttons from disappearing during card hover */
+.vl-service-icon-box-4:hover .event-reg-btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #4b39b5 !important; /* Original purple text color */
+    background-color: #ffffff !important; 
+}
+
+/* 2. Style for the Event-Specific Pill Button */
+.event-reg-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff !important;
+    color: #4b39b5 !important;
+    padding: 12px 40px !important;
+    border-radius: 50px !important; /* Pill shape */
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 20;
+}
+
+/* 3. Hover Effect: Button turns Blue with White text */
+.event-reg-btn:hover {
+    transform: scale(1.05) !important;
+    background-color: #007bff !important; /* Blue background */
+    color: #ffffff !important; /* White text */
+    border-color: #007bff !important;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3) !important;
+}
+
+/* Ensure centering remains correct */
+.vl-service-icon-box-4-content4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Makes the button text look better when the card background is dark */
+.vl-service-icon-box-4:hover .event-reg-btn {
+    border-color: transparent !important;
+}
+
+/* Styles for Desktop (Default) */
+.date-badge {
+    display: inline-block;
+    padding: 10px 170px; /* Your original desktop padding */
+    background-color: #c7c6c851;
+    border-radius: 50px;
+}
+
+.main-event-title {
+    font-family: 'Times New Roman', serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bis-logo {
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Mobile Responsiveness (Screens smaller than 768px) */
+@media (max-width: 768px) {
+    .date-badge {
+        padding: 10px 30px; /* Reduces massive horizontal padding */
+        font-size: 0.9rem;   /* Slightly smaller text for mobile */
+        width: 90%;          /* Ensures it fits within the screen width */
+    }
+
+    .main-event-title {
+        font-size: 1.8rem;   /* Shrinks the title so it doesn't wrap awkwardly */
+        padding: 0 15px;     /* Adds a little breathing room on the sides */
+    }
+
+    .bis-logo {
+        height: 35px;        /* Scales the logo down slightly */
+        display: block;      /* Moves logo above text if needed */
+        margin: 0 auto 10px; /* Centers the logo on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Fix for the Technical & Cultural Fest box */
+    .vl-section-subtitle-5 { 
+        padding: 10px 20px !important; /* Forces the padding to shrink on mobile */
+        width: auto;
+        display: inline-block;
+        max-width: 90%; /* Prevents it from hitting the screen edges */
+        line-height: 1.4; /* Improves readability if the text wraps */
+    }
+
+    /* Fix for the Background Icons */
+    /* Assuming these icons have classes like .target-icon or .megaphone-icon */
+    .floating-icon-class { 
+        display: none; /* Safest bet: hide them on mobile to keep the UI clean */
+    }
+    
+    /* OR, if you want to keep them, scale and reposition them: */
+    .target-icon {
+        top: 5% !important;
+        right: 5% !important;
+        width: 40px !important;
+    }
+}

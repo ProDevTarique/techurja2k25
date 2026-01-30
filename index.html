@@ -34,135 +34,130 @@
 
     
     <!--================= Header section start =================-->
-    <header>
-        <div id="vl-header-sticky" class="vl-header-area vl-transparent-header vl-transparent-header-4">
-            <div class="container vl-header-bg-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-6 col-6">
-                        <div class="vl-logo">
-                            <a href="index.html"><img src="assets/img/logo/vl-logo-1.1.png" alt=""></a>
-                        </div>
+<style>
+    /* 1. Force menu items to stay in a horizontal line */
+    .vl-main-menu nav > ul > li {
+        display: inline-block !important;
+        float: none !important;
+        margin: 0 2px !important; /* Very concise space between items */
+    }
+
+    /* 2. Style the links for a clean look */
+    .vl-main-menu nav > ul > li > a {
+        padding: 25px 8px !important; /* Top/Bottom padding 25px, Left/Right 8px */
+        font-size: 15px !important;
+        display: block;
+        white-space: nowrap !important; /* Prevents text from breaking to next line */
+    }
+
+    /* 3. Ensure dropdown arrows sit next to text */
+    .vl-main-menu ul li a span {
+        margin-left: 3px;
+    }
+</style>
+
+<header>
+    <div id="vl-header-sticky" class="vl-header-area vl-transparent-header vl-transparent-header-4">
+        <div class="container vl-header-bg-4">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="vl-logo">
+                        <a href="index.html"><img src="assets/img/logo/vl-logo-1.1.png" alt="" style="max-width: 100%;"></a>
                     </div>
-                    <div class="col-lg-8 d-none d-lg-block">
-                        <div class="vl-main-menu text-center">
-                            <nav class="vl-mobile-menu-active">
-                                <ul>    
-                                    <ul>
-                                        <li><a href="#about">About us</a></li>
-                                        <li class="has-dropdown"><a href="#events">Events<span><i class="fa-regular fa-angle-down"></i></span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#brochure">Brochure</a></li>
-                                                <li><a href="#schedule">Schedule</a></li>
-                                                <li><a href="#rules">Rules</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown"><a href="javascript:void(0);">E-Sports<span><i class="fa-regular fa-angle-down"></i></span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="https://forms.gle/VUnvs2bRsQbAQcYGA">BGMI</a></li>
-                                                <li><a href="https://forms.gle/5rXZ1NCyMZw59utRA">Free Fire Max</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#gallery">Gallery</a></li>
-                                        <li><a href="#sponsors">Sponsors</a></li>
-                                        <li class="has-dropdown"><a href="#general-inquiry">Contact<span><i class="fa-regular fa-angle-down"></i></span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#event-coordinator">Event Coordinator</a></li>
-                                                <li><a href="#overall-coordinator">Overall Coordinator</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#faq">FAQ</a></li>
+                </div>
+
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="vl-main-menu text-center">
+                        <nav class="vl-mobile-menu-active">
+                            <ul>    
+                                <li><a href="#about">About us</a></li>
+                                <li class="has-dropdown"><a href="#events">Events<span><i class="fa-regular fa-angle-down"></i></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#brochure">Brochure</a></li>
+                                        <li><a href="#schedule">Schedule</a></li>
+                                        <li><a href="#rules">Rules</a></li>
                                     </ul>
-                                </ul>
-                            </nav>
-                        </div>
+                                </li>
+                                <li class="has-dropdown"><a href="javascript:void(0);">E-Sports<span><i class="fa-regular fa-angle-down"></i></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="https://forms.gle/VUnvs2bRsQbAQcYGA">BGMI</a></li>
+                                        <li><a href="https://forms.gle/5rXZ1NCyMZw59utRA">Free Fire Max</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="has-dropdown"><a href="javascript:void(0);">UrjaXPO<span><i class="fa-regular fa-angle-down"></i></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="https://forms.gle/VUnvs2bRsQbAQcYGA">Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#sponsors">Sponsors</a></li>
+                                <li class="has-dropdown"><a href="#general-inquiry">Contact<span><i class="fa-regular fa-angle-down"></i></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#event-coordinator">Event Coordinator</a></li>
+                                        <li><a href="#overall-coordinator">Overall Coordinator</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#faq">FAQ</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-lg-2 col-md-6 col-6">
-                        <div class="vl-herobtn d-none d-lg-block fl-right">
-                            <a href= "https://luma.com/icy3lfms"  class="theme-btn">Register Now <span><i class="fa-regular fa-arrow-right"></i></span></a>
-                        </div>
+                </div>
 
-
-
-                        <div class="vl-header-action-item d-block d-lg-none">
-                            <button type="button" class="vl-offcanvas-toggle">
-                               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
-                                  <rect x="10" width="20" height="2" fill="currentColor"></rect>
-                                  <rect x="5" y="7" width="25" height="2" fill="currentColor"></rect>
-                                  <rect x="10" y="14" width="20" height="2" fill="currentColor"></rect>
-                               </svg>
-                            </button>
-                         </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="vl-herobtn d-none d-lg-block fl-right">
+                        <a href="https://luma.com/icy3lfms" class="theme-btn">Register Now <span><i class="fa-regular fa-arrow-right"></i></span></a>
                     </div>
+
+                    <div class="vl-header-action-item d-block d-lg-none">
+                        <button type="button" class="vl-offcanvas-toggle">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
+                              <rect x="10" width="20" height="2" fill="currentColor"></rect>
+                              <rect x="5" y="7" width="25" height="2" fill="currentColor"></rect>
+                              <rect x="10" y="14" width="20" height="2" fill="currentColor"></rect>
+                           </svg>
+                        </button>
+                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <!-- offcanvas menu start -->
-    <div class="vl-offcanvas vl-offcanvas-bg-1">
-        <div class="vl-offcanvas-wrapper">
-            <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-50">
-                <div class="vl-offcanvas-logo">
-                    <a href="index.html"><img src="assets/img/logo/vl-footer-logo-4.2.png" alt=""></a>
-                </div>
-                <div class="vl-offcanvas-close">
-                   <button class="vl-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
-                </div>
-            </div>
-
-            <div class="vl-offcanvas-menu d-lg-none mb-40">
-                <nav></nav>
-            </div>
-
-            <div class="vl-offcanvas-btnm text-center mb-30">
-                <div class="vl-herobtn vl-aboutbtn w-100 vl-upper">
-                    <a href="https://lu.ma/p5xrs4hz" target="_blank" class="theme-btn theme-btn2">Register Now<span><i class="fa-regular fa-arrow-right"></i></span></a>
-                </div>
-            </div>
-
-
-            <div class="vl-offcanvas-info mb-30">
-                <h3 class="vl-offcanvas-sm-title pb-15">Contact Us</h3>
-
-                <div class="vl-offcanvas-info-box mb-15">
-                    <div class="vl-offcanvas-info-box-icon">
-                        <span><img src="assets/img/icons/vl-contact-iner-phone.svg" alt=""></span>
-                    </div>
-                    <div class="vl-offcanvas-info-box-text">
-                        <span><a href="tel:5799546476">+91 9779035090</a></span>
-                    </div>
-                </div>
-
-                <div class="vl-offcanvas-info-box mb-15">
-                    <div class="vl-offcanvas-info-box-icon">
-                        <span><img src="assets/img/icons/vl-contact-iner-mail.svg" alt=""></span>
-                    </div>
-                    <div class="vl-offcanvas-info-box-text">
-                       <span><a href="mailto:kcettechurja@gmail.com">kcettechurja@gmail.com</a></span>
-                    </div>
-                </div>
-
-                <div class="vl-offcanvas-info-box mb-15">
-                    <div class="vl-offcanvas-info-box-icon">
-                        <span><img src="assets/img/icons/vl-contact-iner-location.svg" alt=""></span>
-                    </div>
-                    <div class="vl-offcanvas-info-box-text">
-                       <span><a href="">Khalsa College of Engineering & Technology, Ranjit Avenue, C-Block, Amritsar, 143001</a></span>
-                    </div>
-                </div>
-            </div>
- 
-            <div class="vl-offcanvas-social mb-40">
-                <h3 class="vl-offcanvas-sm-title mb-15">Follow Us</h3>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-             </div>
-
         </div>
     </div>
+</header>
+
+<!--Mobile menu-->
+
+<div class="vl-offcanvas-wrapper">
     <div class="vl-offcanvas-overlay"></div>
+    <div class="vl-offcanvas-area">
+        <div class="vl-offcanvas-header">
+            <div class="vl-logo">
+                <a href="index.html"><img src="assets/img/logo/vl-logo-1.1.png" alt="Logo"></a>
+            </div>
+            <button class="vl-offcanvas-close">
+                <i class="fa-regular fa-xmark"></i> </button>
+        </div>
+       <div class="vl-offcanvas-content">
+    <nav class="mobile-menu-items">
+        <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="https://forms.gle/VUnvs2bRsQbAQcYGA">UrjaXPO</a></li>
+            <li><a href="https://forms.gle/VUnvs2bRsQbAQcYGA">BGMI</a></li>
+            <li><a href="https://forms.gle/5rXZ1NCyMZw59utRA">Free Fire Max</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#general-inquiry">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+</div>
+            <div class="vl-offcanvas-btn mt-30">
+                <a href="https://luma.com/icy3lfms" class="theme-btn">Register Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- offcanvas menu end -->
 
 
@@ -171,26 +166,31 @@
     <main>
         
     <!--================= Banner section start =================-->
-    <section class="vl-hero-area vl-hero-area-4 vl-hero-bg p-relative z-index-1 fix pt-190 pb-70" style="background-image: url(assets/img/banner/vl-hero-bg-4.1.png);">
+    <section class="vl-hero-area vl-hero-area-4 vl-hero-bg p-relative z-index-1 fix pt-100 pb-0" style="background-image: url(assets/img/banner/vl-hero-bg-4.1.png);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 mb-30">
-                    <div class="vl-hero-content p-relative z-index-1">
+                    <div class="vl-hero-content p-relative z-index-1;">
                        <div class="vl-section-title-wrapper">
-                            <h4 class="vl-section-subtitle-5 vl-white vl-upper">27th & 28th March 2026.</h4>
-                            <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-16">TECH URJA 2026</h1>
-                            <h4 class="vl-section-subtitle-5 vl-white vl-upper">Technical & Cultural Fest</h4>
-                            <p class="vl-section-description pt-16 pb-28">Welcome to Tech Urja 2026, the inter-college technical and cultural fest under the ISTE Student Chapter, Organised by Khalsa College of Engineering and Technology, Amritsar.</p>
+                            <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-16">TECH URJA 2K26 </h1><br>
+
+                             <h4 class="vl-section-subtitle-5 vl-white vl-upper date-badge">
+                                27<sup>th</sup> & 28<sup>th</sup> March 2026.
+                                    </h4>
+
+                            <h2 class="main-event-title">
+                                <img src="assets/img/about/ManakF.png" alt="BIS Logo" class="bis-logo">
+                                    "Manak Carnival [in association with BIS India]"
+                            </h2>
+
+                    <h4 class="vl-section-subtitle-5 vl-white vl-upper"
+                        style="display:inline-block; padding:10px 170px; background-color:#c7c6c851; border-radius:50px;">
+                        Technical & Cultural Fest
+                    </h4>
+
+                        
+                            <p class="vl-section-description pt-16 pb-18">Welcome to Tech Urja 2K26, the inter-college technical and cultural fest under the ISTE Student Chapter, in collaboration with Manak Carnival in association with BIS, Organised by Khalsa College of Engineering and Technology, Amritsar.</p>
                         </div>
-
-
-
-                        <div class="vl-btns mb-60">
-                            <div class="vl-herobtn vl-upper">
-                                <a href="https://lu.ma/p5xrs4hz" target="_blank" class="theme-btn">Register Now<span><i class="fa-regular fa-arrow-right"></i></span></a>
-                            </div>
-                        </div>
-
 
                         <div class="vl-hero-counter">
                             <div class="vl-hero-counter-box mb-30">
@@ -213,13 +213,16 @@
                         <div class="vl-hero-shape-4">
                             <div class="vl-shape-1">
                                 <img src="assets/img/icons/vl-emoji-4.1.svg" alt="">
-                            </div>
+                            </div> 
                             <div class="vl-shape-2">
                                 <img src="assets/img/icons/vl-emoji-4.2.svg" alt="">
-                            </div>
+                            </div> 
                             <div class="vl-shape-3">
                                 <img src="assets/img/icons/vl-emoji-4.3.svg" alt="">
                             </div>
+                            <div class="vl-shape-4">
+                                <img src="/Users/mdtariqueatique/Desktop/Tech Urja 2026 updated/tech urja Website/assets/img/icons/TUrja.svg" alt="">
+                            </div> 
                             
                         </div>
                         <div class="vl-hero-fan">
@@ -261,7 +264,7 @@
                     </div>
 
                     <div class="vl-about-poligon-shap p-relative z-index-1 fl-right">
-                        <img src="assets/img/icons/vl-about-poliogon.svg" alt="">
+                        <img src="assets/img/icons/vl-about-poliogon.svg" alt=""> 
                         <div class="vl-about-poligon-title">
                             <span class="counter vl-semi vl-white">50</span><span>+</span>
                             <p class="vl-fs-20 vl-lineheight-20 pt-10 m-0">Exciting Events</p>
@@ -273,10 +276,10 @@
                 <div class="vl-about-content-4 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
                     <div class="vl-section-title-wrapper">
                         <div class="vl-section-subheading">
-                            <h4 class="vl-section-subtitle-6 vl-upper">Tech Urja 2026</h4>
+                            <h4 class="vl-section-subtitle-6 vl-upper">Tech Urja 2K26</h4>
                         </div>
                         <h2 class="vl-section-title vl-section-title-2 pt-16 pb-20">Igniting Innovation & Creativity</h2>
-                        <p class="vl-section-description-2 pb-32">Join us for Tech Urja 2026, a two-day technical and cultural extravaganza at Khalsa College of Engineering & Technology, Amritsar, on February 20-21, 2025. Explore your potential, connect with talent, and embrace the future through groundbreaking events and vibrant performances.</p>
+                        <p class="vl-section-description-2 pb-32">Join us for Tech Urja 2K26, a two-day technical and cultural extravaganza at Khalsa College of Engineering & Technology, Amritsar, on March 27th and 28th, 2026. Explore your potential, connect with talent, and embrace the future through groundbreaking events and vibrant performances.</p>
 
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
@@ -304,9 +307,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="vl-aboutbtn">
-                        <div class="vl-herobtn vl-aboutbtn vl-upper">
-                            <a href="https://lu.ma/p5xrs4hz" target="_blank" class="theme-btn theme-btn2">Register Now<span><i class="fa-regular fa-arrow-right"></i></span></a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -316,8 +318,9 @@
 </section>
 <!--================= About section End =================-->
 
-<!--================= Tech Urja 2k25 Events Section Start =================-->
-<section id="events" class="vl-service-area vl-gray-bg-4 pt-100 pb-70">
+<!--================= Tech Urja 2k26 Events Section Start =================-->
+
+        <section id="events" class="vl-service-area vl-gray-bg-4 pt-100 pb-70">
     <div class="container">
         <div class="vl-section-title-wrapper text-center mb-60 aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
             <div class="vl-section-subheading">
@@ -326,282 +329,219 @@
             <h2 class="vl-section-title vl-section-title-2 pt-16">Unleashing Talent Through <br> Technical and Cultural Competitions</h2>
         </div>
         <div class="row">
-            <!-- single event box start -->
             <div class="col-lg-4 col-md-6 mb-30 aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
                 <div class="vl-service-icon-box-4 p-relative z-index-1 fix br-8">
                     <div class="vl-service-icon-box-4-icon4">
                         <span><img src="assets/img/icons/vl-ser-ic-4.1.svg" alt=""></span>
                     </div>
-                    <div class="vl-service-icon-box-4-content4">
+                    <div class="vl-service-icon-box-4-content4 text-center">
                         <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Tech Competitions</h3>
                         <p class="vl-fs-18 vl-lineheight-28 pb-24">Showcase your technical prowess with coding, robotics, and IoT challenges designed to test your skills.</p>
+                        <div class="vl-offcanvas-btn mt-30">
+                        <a href="https://luma.com/icy3lfms" class="event-reg-btn">Register Now</a>
+                    </div>
                     </div>
                 </div>
             </div>
-            <!-- single event box end -->
 
-            <!-- single event box start -->
             <div class="col-lg-4 col-md-6 mb-30 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
                 <div class="vl-service-icon-box-4 p-relative z-index-1 fix br-8">
-                    <div class="vl-service-icon-box-4-icon4">
-                        <span><img src="assets/img/icons/vl-ser-ic-4.2.svg" alt=""></span>
-                    </div>
-                    <div class="vl-service-icon-box-4-content4">
-                        <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Cultural Events</h3>
-                        <p class="vl-fs-18 vl-lineheight-28 pb-24">Celebrate creativity and culture with dance, music, and drama competitions that inspire and entertain.</p>
+                    <a href="assets/img/about/KalaKriti.jpeg" class="poster-link" style="text-decoration: none; color: inherit;">
+                        <div class="vl-service-icon-box-4-icon4">
+                            <span><img src="assets/img/icons/vl-ser-ic-4.2.svg" alt=""></span>
+                        </div>
+                    </a>
+                    <div class="vl-service-icon-box-4-content4 text-center">
+                        <a href="assets/img/about/KalaKriti.jpeg" class="poster-link" style="text-decoration: none; color: inherit;">
+                            <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Kalakriti</h3>
+                            <p class="vl-fs-18 vl-lineheight-28 pb-24">Celebrate creativity and culture with dance, music, and drama competitions that inspire and entertain.</p>
+                        </a>
+                        <div class="vl-offcanvas-btn mt-30">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSciEHIbiLWFk4mfvl5xpApp5IqM3LtoNjM-MzdjQf8idhoDbw/viewform?usp=publish-editor" class="event-reg-btn">Register Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- single event box end -->
 
-            <!-- single event box start -->
             <div class="col-lg-4 col-md-6 mb-30 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
                 <div class="vl-service-icon-box-4 p-relative z-index-1 fix br-8">
                     <div class="vl-service-icon-box-4-icon4">
                         <span><img src="assets/img/icons/vl-ser-ic-4.3.svg" alt=""></span>
                     </div>
-                    <div class="vl-service-icon-box-4-content4">
+                    <div class="vl-service-icon-box-4-content4 text-center">
                         <h3 class="vl-service-icon-box-4-title pt-32 pb-16">E-Sports Arena</h3>
                         <p class="vl-fs-18 vl-lineheight-28 pb-24">Compete in thrilling e-sports tournaments and experience the excitement of gaming at its peak.</p>
+                        <div class="vl-offcanvas-btn mt-30">
+                        <a href="https://luma.com/icy3lfms" class="event-reg-btn">Register Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- single event box end -->
 
-            <!-- single event box start -->
             <div class="col-lg-4 col-md-6 mb-30 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300">
                 <div class="vl-service-icon-box-4 p-relative z-index-1 fix br-8">
-                    <div class="vl-service-icon-box-4-icon4">
-                        <span><img src="assets/img/icons/vl-ser-ic-4.4.svg" alt=""></span>
+                    <a href="assets/img/about/UrjaXPO.jpeg" class="poster-link" style="text-decoration: none; color: inherit;">
+                        <div class="vl-service-icon-box-4-icon4">
+                            <span><img src="assets/img/icons/vl-ser-ic-4.4.svg" alt=""></span>
+                        </div>
+                    </a>
+                    <div class="vl-service-icon-box-4-content4 text-center">
+                        <a href="assets/img/about/UrjaXPO.jpeg" class="poster-link" style="text-decoration: none; color: inherit;">
+                            <h3 class="vl-service-icon-box-4-title pt-32 pb-16">UrjaXPO</h3>
+                            <p class="vl-fs-18 vl-lineheight-28 pb-24">Demonstrate your intellectual and creative versatility with expressive challenges.</p>
+                        </a>
+                       <div class="vl-offcanvas-btn mt-30">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScCept-H9e9IO8RiSjr5nKW-FYOivxl2M33J-IOjS58-nr-dw/viewform?usp=publish-editor" class="event-reg-btn">Register Now</a>
                     </div>
-                    <div class="vl-service-icon-box-4-content4">
-                        <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Workshops & Seminars</h3>
-                        <p class="vl-fs-18 vl-lineheight-28 pb-24">Enhance your knowledge with expert-led workshops and industry-driven seminars.</p>
-                        <br>
                     </div>
                 </div>
             </div>
-            <!-- single event box end -->
 
-            <!-- single event box start -->
             <div class="col-lg-4 col-md-6 mb-30 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1400">
                 <div class="vl-service-icon-box-4 p-relative z-index-1 fix br-8">
                     <div class="vl-service-icon-box-4-icon4">
                         <span><img src="assets/img/icons/vl-ser-ic-4.5.svg" alt=""></span>
                     </div>
-                    <div class="vl-service-icon-box-4-content4">
-                        <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Startup Showcase</h3>
-                        <p class="vl-fs-18 vl-lineheight-28 pb-24">Discover innovative ideas and groundbreaking projects presented by budding entrepreneurs.</p>
+                    <div class="vl-service-icon-box-4-content4 text-center">
+                        <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Manak Carnival</h3>
+                        <p class="vl-fs-18 vl-lineheight-28 pb-24">Discover innovative ideas and ground-breaking projects presented by budding entrepreneurs.</p>
+                       <div class="vl-offcanvas-btn mt-09">
+                        <a href="https://luma.com/icy3lfms" class="event-reg-btn">Register Now</a>
+                    </div>
                     </div>
                 </div>
             </div>
-            <!-- single event box end -->
 
-            <!-- single event box start -->
             <div class="col-lg-4 col-md-6 mb-30 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
                 <div class="vl-service-icon-box-4 p-relative z-index-1 fix br-8">
                     <div class="vl-service-icon-box-4-icon4">
                         <span><img src="assets/img/icons/vl-ser-ic-4.6.svg" alt=""></span>
                     </div>
-                    <div class="vl-service-icon-box-4-content4">
+                    <div class="vl-service-icon-box-4-content4 text-center">
                         <h3 class="vl-service-icon-box-4-title pt-32 pb-16">Networking Sessions</h3>
                         <p class="vl-fs-18 vl-lineheight-28 pb-24">Connect with professionals, experts, and peers in interactive networking sessions.</p>
-                        <br>
+                        <div class="vl-offcanvas-btn mt-30">
+                        <a href="https://luma.com/icy3lfms" class="event-reg-btn">Register Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
             <!-- single event box end -->
+        <section id="brochure-section" class="pt-100 pb-70">
+         <div class="container">
+         <div id="brochure" class="vl-section-title-wrapper text-center mb-60 aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+            <div class="vl-section-subheading">
+                <h4 class="vl-section-subtitle-6 vl-upper">Downloads & Resources</h4>
+            </div>
+        </div>
 
-
-
-            <div id="brochure" class="vl-section-title-wrapper text-center mb-60 aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
-                <div class="vl-section-subheading">
-                    <h4  class="vl-section-subtitle-6 vl-upper">Downloads & Resources</h4>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="vl-pricing-box p-relative z-index-1 mb-30 aos-init aos-animate" data-aos="fade-right" data-aos-duration="900">
+                    <div class="vl-pricing-box-price">
+                        <h2 class="price-number">Brochure</h2>
+                    </div>
+                    <div class="vl-pricing-box-content">
+                        <p>Brochure with the full list of events hosted by each department.</p>
+                    </div>
+                    <div class="vl-pricing-box-list">
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>Department-wise Event List</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>Special Events Marked with *</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>Offline Event Details</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>Event Hosting Departments</p></div>
+                        </div>
+                    </div>
+                    <div class="vl-pricing-box-btn mt-12">
+                        <div class="vl-herobtn vl-aboutbtn vl-upper">
+                            <a href="assets/img/about/Brochure 2026.pdf" class="theme-btn theme-btn2">Download <span><i class="fa-regular fa-download"></i></span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div id="schedule" class="col-lg-4 col-md-6">
+                <div class="vl-pricing-box p-relative z-index-1 mb-30 aos-init aos-animate" data-aos="fade-right" data-aos-duration="900">
+                    <div class="vl-pricing-box-price">
+                        <h2 class="price-number">Schedule</h2>
+                    </div>
+                    <div class="vl-pricing-box-content">
+                        <p>Get the full event schedule with venues, timings, and competition details.</p>
+                    </div>
+                    <div class="vl-pricing-box-list">
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>📅 27<sup>th</sup> & 28<sup>th</sup> March 2026</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>📍 Multipurpose Hall & Dept. Labs</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>🎭 Cultural & Technical Events</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>🏆 Prize-Winning Competitions</p></div>
+                        </div>
+                    </div>
+                    <div class="vl-pricing-box-btn mt-12">
+                        <div class="vl-herobtn vl-aboutbtn vl-upper">
+                            <a href="assets/downloads/Schedule_of_events-Tech-Urja-2k25.pdf" class="theme-btn theme-btn2">Download <span><i class="fa-regular fa-download"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            <!-- Brochure Starts -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="vl-pricing-box p-relative z-index-1 mb-30 aos-init aos-animate" data-aos="fade-right" data-aos-duration="900">
-                                    <div class="vl-pricing-box-price">
-                                        <h2 class="price-number">Brochure<span></span></h2>
-                                    </div>
-                            
-                                    <div class="vl-pricing-box-content">
-                                        <p>Brochure with the full list of events hosted by each department.</p>
-                                    </div>
-                                    
-                                    <div class="vl-pricing-box-list">
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>Department-wise Event List</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>Special Events Marked with *</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>Offline Event Details</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>Event Hosting Departments</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="vl-pricing-box-btn mt-12">
-                                        <div class="vl-herobtn vl-aboutbtn vl-upper">
-                                            <a href="assets/downloads/techurja poster 2025.pdf" class="theme-btn theme-btn2">Download<span><i class="fa-regular fa-download"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            <!-- Broschure Ends -->
-            
-                             <!-- Schedule Starts -->
-
-                            <div id="schedule" class="col-lg-4 col-md-6">
-                                <div class="vl-pricing-box p-relative z-index-1 mb-30 aos-init aos-animate" data-aos="fade-right" data-aos-duration="900">
-                                    <div class="vl-pricing-box-price">
-                                        <h2 class="price-number">Schedule<span></span></h2>
-                                    </div>
-                            
-                                    <div class="vl-pricing-box-content">
-                                        <p>Get the full event schedule with venues, timings, and competition details.</p>
-                                    </div>
-                                    
-                                    <div class="vl-pricing-box-list">
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>📅 27th-28th March 2026 </p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>📍 Multipurpose Hall & Dept. Labs</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>🎭 Cultural & Technical Events</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>🏆 Prize-Winning Competitions</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="vl-pricing-box-btn mt-12">
-                                        <div class="vl-herobtn vl-aboutbtn vl-upper">
-                                            <a href="assets/downloads/Schedule_of_events-Tech-Urja-2k25.pdf" class="theme-btn theme-btn2">Download<span><i class="fa-regular fa-download"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Schedule Ends -->
-            
-                            <!-- Rules Starts -->
-
-                            <div id="rules" class="col-lg-4 col-md-6">
-                                <div class="vl-pricing-box p-relative z-index-1 mb-30 aos-init aos-animate" data-aos="fade-right" data-aos-duration="900">
-                                    <div class="vl-pricing-box-price">
-                                        <h2 class="price-number">Rules<span></span></h2>
-                                    </div>
-                            
-                                    <div class="vl-pricing-box-content">
-                                        <p>Know the rules and guidelines for all events to ensure fair play and smooth participation.</p>
-                                    </div>
-                                    
-                                    <div class="vl-pricing-box-list">
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>📜 General Event Guidelines</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>🏆 Competition Rules</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>🚫 Code of Conduct</p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="vl-pricing-box-list-box mb-20">
-                                            <div class="vl-icon">
-                                                <span><i class="fa-regular fa-check"></i></span>
-                                            </div>
-                                            <div class="vl-icon-content">
-                                                <p>🔔 Judging Criteria</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="vl-pricing-box-btn mt-12">
-                                        <div class="vl-herobtn vl-aboutbtn vl-upper">
-                                            <a href="assets/downloads/Rules-Tech-Urja-2k25.pdf" class="theme-btn theme-btn2">Download<span><i class="fa-regular fa-download"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div id="rules" class="col-lg-4 col-md-6">
+                <div class="vl-pricing-box p-relative z-index-1 mb-30 aos-init aos-animate" data-aos="fade-right" data-aos-duration="900">
+                    <div class="vl-pricing-box-price">
+                        <h2 class="price-number">Rules</h2>
+                    </div>
+                    <div class="vl-pricing-box-content">
+                        <p>Know the rules and guidelines for all events to ensure fair play and smooth participation.</p>
+                    </div>
+                    <div class="vl-pricing-box-list">
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>📜 General Event Guidelines</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>🏆 Competition Rules</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>🚫 Code of Conduct</p></div>
+                        </div>
+                        <div class="vl-pricing-box-list-box mb-20">
+                            <div class="vl-icon"><span><i class="fa-regular fa-check"></i></span></div>
+                            <div class="vl-icon-content"><p>🔔 Judging Criteria</p></div>
+                        </div>
+                    </div>
+                    <div class="vl-pricing-box-btn mt-12">
+                        <div class="vl-herobtn vl-aboutbtn vl-upper">
+                            <a href="assets/downloads/Rules-Tech-Urja-2k25.pdf" class="theme-btn theme-btn2">Download <span><i class="fa-regular fa-download"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> </div> </section>
                             <!-- Rules Ends -->
-
-        </div>
-   </div>
-</section>
 
 <!--================= Tech Urja 2026 Events Section End =================-->
 
@@ -857,17 +797,23 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="cseCoordinatorsHeader">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSE" aria-expanded="false" aria-controls="collapseCSE">
-                                Computer Science & Engineering/AIML Coordinators
+                                Computer Science & Engineering/AIML Coordinators/MCA
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
                         <div id="collapseCSE" class="accordion-collapse collapse" aria-labelledby="cseCoordinatorsHeader" data-bs-parent="#accordion-cse">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
-                                <p>Er. Paramjeet Kaur,<br>Assistant Professor,<br>+91 8847524967</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
+                                <p>Er. Paramjeet Kaur<br>Assistant Professor, C.S.E<br>+91 88475 24967</p>
+                                <br> 
+                                <p>Ms. Damini Soni <br>Assistant Professor, MCA <br>+91 75268 26260</p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-                                <p>Md Azam Qamar <br>Computer Science & Engineering, 6th Semester <br> +91 6201997897</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
+                                <p>Ankit Mishra <br>Computer Science & Engineering, 6th Semester <br> +91 90973 97214</p>
+                                <br>
+                                <p> Vishal Singh <br>MCA, 4th Semester,<br>+91 98889 40360</p>
+                                <br>
+                                <p> Mandeep Thakur <br> MCA, 4th Semester <br> +91 90411 24041 </p>
                             </div>
                         </div>
                     </div>
@@ -886,7 +832,7 @@
                             <div class="accordion-body">
                                 <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
                                 <br>
-                                <p>Dr. Atul Agnihotri, <br>Dean Research and Consultancy, <br>+91 7986270473</p>
+                                <p>Dr. Atul Agnihotri <br>Dean Research and Consultancy <br>+91 79862 70473</p>
                                 <br>
                                 <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
                                 
@@ -906,11 +852,11 @@
                         </h2>
                         <div id="collapseCE" class="accordion-collapse collapse" aria-labelledby="ceCoordinatorsHeader" data-bs-parent="#accordion-ce">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
                                 <p> Dr. Sandeep Singh <br>Assistant Professor,<br> </p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-                                <p>Avinash Kumar <br> Civil Engineering, 5th Semester,<br>+91 7520812385</p> 
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
+                                <p>Avinash Kumar <br> Civil Engineering, 5th Semester<br>+91 75208 12385</p> 
                             </div>
                         </div>
                     </div>
@@ -929,10 +875,13 @@
                             <div class="accordion-body">
                                 <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
                                 <br> 
+                                <p> Shivani Mahajan <br> Assistant Professor, BCA <br> +91 81466 66267 </p> 
+                                <br>
+                                <p>Gaganpreet Kaur, <br>Assistant Professor, BCA, <br> +91 78891 67202</p>
+                                <br>
                                  <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-
-                    
-                          
+                                <p> Sanni <br> BCA, 4th Sem <br> +91 8709669085</p>
+                                <br> 
                             </div>
                         </div>
                     </div>
@@ -948,10 +897,10 @@
                         </h2>
                         <div id="collapseHMCT" class="accordion-collapse collapse" aria-labelledby="hmctCoordinatorsHeader" data-bs-parent="#accordion-hmct">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
-                                <p>Ms. Kanika Thakur, <br>Assistant Professor,<br>+91 8360039796</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
+                                <p>Ms. Kanika Thakur, <br>Assistant Professor,<br>+91 83600 39796</p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
                                 <p> Meghna <br> Hotel Management and Catering Technology, 4th Semester,<br>+91 8699438098</p>
                             </div>
                         </div>
@@ -970,14 +919,16 @@
                             <div class="accordion-body">
                                 <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinators</p>
                                 <br>
-                                <p>Er.Gurcharan Singh,<br>Assistant Professor,ME<br>+91 9888989391</p>
+                                <p>Er.Gurcharan Singh,<br>Assistant Professor,ME<br>+91 98889 89391</p>
                                 <br>
                                 <p>Er. Parneet Kaur,<br>HOD, MCA</p>
                                 <br>
                                 <p>Er. Sarbjot Kaur,<br>Assistant Professor, CSE</p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinators</p>
-                                
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinators</p><br>
+                                <p>Tanupreet Kaur, <br>BBA, 6<sup>th</sup> Semester, <br>+91 82641 28017</p>
+                                <br>
+                                <p>Amritveer Singh, <br>BHMCT, 6<sup>th</sup> Semester, <br>+91 99147 99138</p><br>
                             </div>
                         </div>
                     </div>
@@ -997,11 +948,12 @@
                         </h2>
                         <div id="collapseECE" class="accordion-collapse collapse" aria-labelledby="eceCoordinatorsHeader" data-bs-parent="#accordion-ece">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
-                                
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
+                                <p>Jasdeep Singh, <br>Assistant Professor, ECE <br>+91 94652 78550</p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-                               
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
+                               <p>Atul Pandey  <br>Electronics & Communication Engineering, 4th Semester,
+                                <br>+91 87972 99161</p>
                             </div> 
                                  
                         </div>
@@ -1019,11 +971,10 @@
                         </h2>
                         <div id="collapseME" class="accordion-collapse collapse" aria-labelledby="meCoordinatorsHeader" data-bs-parent="#accordion-me">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
-                                
-                                <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-                                
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
+                                <p>Dr. Jasjeevan Singh, <br>Assistant Professor, Mechanical Engineering <br> +91 8284834499</p> <br>
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
+                                <p>Dinesh Kumar Yadav, <br>Mechanical Engineering, 6<sup>th</sup> Semester, <br> +91 6209701165</p>
                             </div>
                         </div>
                     </div>
@@ -1039,11 +990,12 @@
                         </h2>
                         <div id="collapsePMS" class="accordion-collapse collapse" aria-labelledby="pmsCoordinatorsHeader" data-bs-parent="#accordion-pms">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
                                 <p>Ms. Tanya Sharma <br>Assistant Professor,<br>+91 6284081180</p>
+                                <br>
                                 <p> Ms. Bharti <br> Assistant Professor <br> +91 7018632090</p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
                                 <p>Sheezan Shafi,<br>  Medical Allied Sciences, 6th Semester,<br>+91 8493051232</p>
                             </div>
                         </div>
@@ -1054,25 +1006,16 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="bbaCoordinatorsHeader">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBBA" aria-expanded="false" aria-controls="collapseBBA">
-                                MBA/MCA/BBA Coordinators
+                                MBA/BBA Coordinators
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
                         <div id="collapseBBA" class="accordion-collapse collapse" aria-labelledby="bbaCoordinatorsHeader" data-bs-parent="#accordion-bba">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
-                                <br>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
                                 <p>Ms. Akashita Malik,<br>Assistant Professor,BBA <br>+91 8580596979</p>
                                 <br>
-                                <p>Ms. Damini Soni, <br>Assistant Professor, MCA, <br>+91 7526826260</p>
-                                <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-                                
-                                <br>
-                                <p> Vishal Singh <br>MCA, 4th Semester,<br>+91 9888940360</p>
-                                <br>
-                                <p> Mandeep Thakur <br> MCA 4th Semester <br> +91 9041124041 </p>
-                                <br> 
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
                                 <p> Ankita <br> BBA, 4th Semester,<br>+91 8427771593</p>
                                 
                             </div>
@@ -1090,10 +1033,10 @@
                         </h2>
                         <div id="collapseGE" class="accordion-collapse collapse" aria-labelledby="geCoordinatorsHeader" data-bs-parent="#accordion-ge">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
                                 <p>Dr. Ripin Kohli, <br>HOD, Applied Sciences, <br>+91 8146585472</p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
                                 <p><br><br></p>
                             </div>
                         </div>
@@ -1110,11 +1053,12 @@
                         </h2>
                         <div id="collapseES" class="accordion-collapse collapse" aria-labelledby="esCoordinatorsHeader" data-bs-parent="#accordion-es">
                             <div class="accordion-body">
-                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p>
+                                <p class="coordinator-title" style="font-size: 20px;">Faculty Coordinator</p><br>
                                 <p><br><br></p>
                                 <br>
-                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p>
-                               
+                                <p class="coordinator-title" style="font-size: 20px;">Student Coordinator</p><br>
+                               <p>Sameer,<br>Diploma Civil, 4<sup>th</sup> Semester,<br>+91 76679 55685</p> <br>
+                               <p>Siddhart Chauhan,<br>B.Tech C.S.E, 2<sup>nd</sup> Semester,<br>+91 76679 55685</p><br>
                             </div>
                         </div>
                     </div>
@@ -1150,17 +1094,15 @@
                             <div class="accordion-body">
                                 <p style="font-size: 25px;">Faculty Coordinators</p>
                                 <br>
-                                <p>Dr. Ripin Kohli, <br>HOD, Applied Sciences, <br>+91 8146585472</p>
+                                <p>Dr. Ripin Kohli <br>HOD, Applied Sciences<br>+91 81465 85472</p>
                                 <br>
-                               
+                                <p> Er. Karanbir Singh <br> State officer deputy dean Student  </p>
                                 <br>
-                                
+                                <p> Er. Akarshan Uppal <br> Assistant Professor, Civil Department </p>
                                 <br>
-                               
+                                <p> Ms. Chanpreet Kaur <br> Assistant Professor, Agriculutral Department </p>
                                 <br>
-                                
-                                <br>
-                               
+                                <p> Mr.Yogesh Sharma <br> HOD, BBA <br>+91 62844 57911</p>
                                 <br>
                             </div>
                         </div>
@@ -1180,15 +1122,20 @@
                         </h2>
                         <div id="collapseStudent" class="accordion-collapse collapse" aria-labelledby="studentCoordinators" data-bs-parent="#accordion-student">
                             <div class="accordion-body">
-                                <p style="font-size: 25px;">Overall Student Coordinators</p>
+                                <p style="font-size: 25px;">Overall Student Coordinators</p><br>
+                                
+                                 <p>Md. Azam Qamar<br> Computer Science & Engineering, 6<sup>th</sup> Semseter
+                                    <br>+91 62019 97897</p>
                                 <br>
-                                <p>Harcharanjeet Singh <br>Computer Science & Engineering, 4th Semester, &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>+91 9779035090</p>
+                                <p>Md. Tarique Atique <br> Computer Science & Engineering, 6<sup>th</sup> Semseter
+                                    <br>+91 75439 93609</p>
                                 <br>
-                                <p>Atul Kr. Pandey  <br>Electronics & Communication Engineering, 4th Semester, &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>+91 8797299161</p>
-                                <br> 
-                                <p>Md. Tarique Atique <br> Computer Science & Engineering 6th  Semester, &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>+91 7543993609</p>
+                                <p>Atul Pandey  <br>Electronics & Communication Engineering, 4<sup>th</sup> Semseter
+                                    <br>+91 87972 99161</p>
                                 <br>
-                                <p>Md Azam Qamar<br> Computer Science & Engineering 6th Semseter  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>+91 6201997897</p>
+                                <p> Harcharanjeet Singh <br>Computer Science & Engineering, 4<sup>th</sup> Semseter
+                                    <br>+91 97790 35090</p>
+                                <br>
                             </div> 
                         </div>
                     </div>
@@ -1209,13 +1156,14 @@
                             <div class="accordion-body">
                                 <p style="font-size: 25px;">Overall students Co-Coordinators</p>
                                 <br>
-                                <p> Suraj Chaubey  <br>Computer Science & Engineering, 4th Semester ,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>+91 8521968244</p>
+                                <p> Suraj Chaubey  <br>Computer Science & Engineering, 4<sup>th</sup> Semester<br>+91 85219 68244</p>
                                 <br>
-                                <p> Faiz Alam <br> Computer Science & Engineering, 4th Semester <br> +91 8092592401</p>
-                                <br> 
-                                <p> Diwaker Kumar <br> Electronics & Communication Engineering, 4th Semester <br> +91 9572303806</p>
+                                <p> Diwakar Kumar <br> Electronics & Communication Engineering, 4<sup>th</sup> Semester 
+                                <br> +91 95723 03806</p>
                                 <br>
-                                
+                                <p> Faiz Alam <br> Computer Science & Engineering, 4<sup>th</sup> Semester 
+                                <br> +91 80925 92401</p>
+                                <br>   
                             </div>
                         </div>
                     </div>
@@ -1235,15 +1183,20 @@
                     <div class="accordion-body">
                         <p style="font-size: 25px;">Students Supporting Team</p>
                         <br>
-                        <p> Gunjan Gandotra <br> Electronics & Communication Engineering, 2nd  Semester <br> +91 9622668796</p>  
+                        <p> Gunjan Gandotra <br> Electronics & Communication Engineering, 2<sup>nd</sup> Semester 
+                            <br>+91 96226 68796</p>  
                         <br> 
-                        <p> Palak Gujral <br> Electronics & Communication Engineering, 2nd Semester <br> +91 9070535055</p> 
+                        <p> Palak Gujral <br> Electronics & Communication Engineering, 2<sup>nd</sup> Semester 
+                            <br>+91 90705 35055</p> 
                         <br> 
-                        <p> Ridhima Devi <br> Artificial Intelligence & Machine Learning, 2nd Semester <br> +91 8872003743</p>
+                        <p> Ridhima Devi <br> Artificial Intelligence & Machine Learning, 2<sup>nd</sup> Semester 
+                            <br>+91 88720 03743</p>
                         <br> 
-                        <p> Tejpal Sharma <br> Artificial Intelligence & Machine Learning, 2nd Semester <br> +91 9877125794 </p>
+                        <p> Tejpal Sharma <br> Artificial Intelligence & Machine Learning, 2<sup>nd</sup> Semester 
+                            <br>+91 98771 25794 </p>
                         <br> 
-                        <p> Taranjot <br> Artificial Intelligence & Machine Learning, 2nd Semester <br> +91 7589409532 </p>           
+                        <p> Taranjot <br> Artificial Intelligence & Machine Learning, 2<sup>nd</sup> Semester 
+                            <br>+91 75894 09532 </p>           
                         <br> 
                     </div>
             </div>
@@ -1266,8 +1219,7 @@
                             <div class="accordion-body">
                                 <p style="font-size: 25px;">Students Supporting Team</p>
                                 <br>
-                               
-                            </div>
+                               </div>
                         </div>
                     </div>
                 </div>
@@ -1286,22 +1238,87 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
-                <div class="vl-contact-iner-box br-8 vl-gray-bg-4 mb-30">
+               <div class="vl-contact-iner-box br-8 vl-gray-bg-4 mb-30">
                     <h3 class="vl-fs-24 vl-lineheight-24 vl-text-cmn-blck pb-20 m-0" id="register">Register Now</h3>
-                    <p class="vl-text-para vl-fs-18 vl-lineheight-28 pb-30 m-0">Tech Urja 2026 is a two-day technical and cultural fest with over 50 events, including esports, cultural, and technical competitions. Join us at Khalsa College of Engineering & Technology, Amritsar, on March 27th and 28th, 2026, for an unforgettable experience.</p>
-                    <div class="vl-contact-iner-form">
-                        <iframe
-  src="https://luma.com/embed/event/evt-fsNatIjgbFqOnrE/simple"
-  width="600"
-  height="450"
-  frameborder="0"
-  style="border: 1px solid #bfcbda88; border-radius: 4px;"
-  allow="fullscreen; payment"
-  aria-hidden="false"
-  tabindex="0"
-></iframe>
+                    
+                    <p class="vl-text-para vl-fs-18 vl-lineheight-28 pb-30 m-0">
+                        Tech Urja 2026 is back and bigger than ever, serving as the ultimate fusion of innovation, creativity, and adrenaline! This massive two-day technical and cultural extravaganza features a diverse lineup of over 50 dynamic events designed to challenge your skills and ignite your passion. Whether you are a coding wizard, a stage performer, or a competitive gamer looking to dominate in our esports tournaments, there is a stage waiting for you. <br><br>
+
+                        Join the excitement at the sprawling campus of Khalsa College of Engineering & Technology, Amritsar, on March 27<sup>th</sup> & 28<sup>th</sup>, 2026. Don’t just watch from the sidelines—come showcase your talent, win exciting prizes, and be part of an electric atmosphere that promises an truly unforgettable experience.
+                    </p>
+                    
+                    <style>
+                        .custom-register-btn-container {
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+
+                        .custom-register-btn {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background-color: #ffffff; /* White Background */
+                            color: #621af3; /* Purple Text */
+                            padding: 15px 35px; /* Large padding */
+                            border-radius: 50px; /* Pill shape */
+                            font-size: 22px; /* Large Text */
+                            font-weight: 700;
+                            text-decoration: none;
+                            box-shadow: 0 4px 15px rgb(255, 255, 255); /* Subtle shadow for depth */
+                            transition: all 0.3s ease;
+                            border: 2px solid rgba(37, 99, 235, 0.4); /* Prevents layout shift on hover if needed */
+                            gap: 15px;
+                        }
+
+                        /* The Grey Circle */
+                        .btn-icon-circle {
+                            width: 45px;
+                            height: 45px;
+                            background-color: #F3F4F6; /* Grey Background */
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: transform 0.3s ease;
+                        }
+
+                        /* The Arrow SVG */
+                        .btn-icon-circle svg {
+                            width: 24px;
+                            height: 24px;
+                            stroke: #621af3; /* Purple Arrow */
+                            stroke-width: 2.5;
+                        }
+
+                        /* HOVER EFFECTS */
+                        .custom-register-btn:hover {
+                            background-color: #2563EB; /* Button turns Blue */
+                            color: #ffffff !important; /* Text turns White */
+                            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+                            transform: translateY(-2px);
+                        }
+
+                        /* On hover, the arrow inside the grey circle stays blue (for contrast against grey) 
+                           but the circle can rotate slightly for effect */
+                        .custom-register-btn:hover .btn-icon-circle {
+                            transform: rotate(45deg); /* Extra tilt effect on hover */
+                            background-color: #ffffff; /* Optional: Make circle white on hover for cleaner look */
+                        }
+                    </style>
+
+                    <div class="custom-register-btn-container">
+                        <a href="https://luma.com/event/evt-fsNatIjgbFqOnrE" class="custom-register-btn">
+                            <span>REGISTER NOW</span>
+                            <div class="btn-icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
+                        </a>
+                        
+                        <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
                     </div>
-                </div>
+                    </div>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="vl-contact-iner-widget ml-50 mb-30">
@@ -1316,7 +1333,7 @@
                         </div>
                         <div class="vl-contact-iner-widget-1-content">
                             <h5 class="vl-contact-iner-widget-1-content-title pb-14 m-0">Give us a Call</h5>
-                            <a href="tel:+919263325669">+91 9779035090</a>
+                            <a href="tel:+919263325669">+91 8797299161</a>
                         </div>
                     </div>
 
@@ -1326,7 +1343,7 @@
                         </div>
                         <div class="vl-contact-iner-widget-1-content">
                             <h5 class="vl-contact-iner-widget-1-content-title pb-14 m-0">Email Us</h5>
-                            <a href="mailto:freedomshahban07@gmail.com">kcettechurja@gmail.com</a><br>
+                            <a href="mailto:kcettechurja@gmail.com">kcettechurja@gmail.com</a><br>
                         </div>
                     </div>
 
@@ -1361,13 +1378,13 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="heading1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                What is Tech Urja 2026 ?
+                                What is Tech Urja 2K26 ?
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
                         <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion-left">
                             <div class="accordion-body">
-                                <p>Tech Urja 2026 is a two-day technical and cultural fest organized by Khalsa College of Engineering & Technology, Amritsar. It includes over 50 exciting events such as technical challenges, cultural performances, and esports tournaments.</p>
+                                <p>Tech Urja 2K26 is a two-day technical and cultural fest organized by Khalsa College of Engineering & Technology, Amritsar. It includes over 50 exciting events such as technical challenges, cultural performances, and esports tournaments.</p>
                             </div>
                         </div>
                     </div>
@@ -1375,13 +1392,13 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="heading2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                When and where will Tech Urja 2026 take place?
+                                When and where will Tech Urja 2K26 take place?
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion-left">
                             <div class="accordion-body">
-                                <p>Tech Urja 2026 will be held on March 27 & 28, 2026 at Khalsa College of Engineering & Technology, Amritsar.</p>
+                                <p>Tech Urja 2K26 will be held on March 27<sup>th</sup> & 28<sup>th</sup>, 2026 at Khalsa College of Engineering & Technology, Amritsar.</p>
                             </div>
                         </div>
                     </div>
@@ -1395,7 +1412,7 @@
                         </h2>
                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion-left">
                             <div class="accordion-body">
-                                <p>Registration for all events at Tech Urja 2026 is completely free, except for E-sports, which have registration charges.</p>
+                                <p>Registration for all events at Tech Urja 2K26 is completely free, except for E-sports, which have registration charges.</p>
                             </div>
                         </div>
                     </div>
@@ -1403,7 +1420,7 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="heading4">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                How can I register for Tech Urja 2026?
+                                How can I register for Tech Urja 2K26?
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
@@ -1417,7 +1434,7 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="heading5">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                Who can participate in Tech Urja 2026 ?
+                                Who can participate in Tech Urja 2K26 ?
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
@@ -1437,7 +1454,7 @@
                     <div class="vl-accordion-item vl-accordion-item-2 mb-20">
                         <h2 class="accordion-header" id="heading6">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                What types of events can I expect at Tech Urja 2026?
+                                What types of events can I expect at Tech Urja 2K26?
                                 <span><i class="fa-regular fa-angle-down"></i></span>
                             </button>
                         </h2>
@@ -1471,7 +1488,7 @@
                         </h2>
                         <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordion-right">
                             <div class="accordion-body">
-                                <p>No, Tech Urja 2026 does not provide accommodation. Participants are advised to make their own arrangements if traveling from outside Amritsar.</p>
+                                <p>No, Tech Urja 2K26 does not provide accommodation. Participants are advised to make their own arrangements if traveling from outside Amritsar.</p>
                             </div>
                         </div>
                     </div>
@@ -1500,7 +1517,7 @@
                         <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordion-right">
                             <div class="accordion-body">
                                 <p>For any questions or additional information, feel free to contact us:<br>
-                                Phone: +91 9779035090<br>
+                                Phone: +91 8797299161<br>
                                 Email: kcettechurja@gmail.com</p>
                             </div>
                         </div>
@@ -1573,7 +1590,7 @@
                             <div class="vl-footer-copyright-menu">
                                <ul>
                                     <li>Design & Developed by <a href="https://www.linkedin.com/in/mokarram-shahban-516921260/">Mokarram Shahban </a> & <a href="https://www.linkedin.com/in/sangeeta-kumari-652101253/">Sangeeta Kumari</a>
-                                     <li>Managed by <a href="https://www.linkedin.com/in/harcharanjeet-singh-96ba20352/"> Harcharanjeet Singh </a> </li>
+                                     <li>Managed by <a href="https://hostwebs.site/CAlBOu"> Md. Tarique Atique </a> & <a href="https://www.linkedin.com/in/harcharanjeet-singh-96ba20352/"> Harcharanjeet Singh </a> </li>
                                         <br>
                                     Students of Khalsa College of Engineering & Technology
                                 </li>
